@@ -7,7 +7,64 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
+  <!-- ----------------------------------------------------------- -->
+  <style>
+body{
+    background-color: #1C1427;
+}
+.rand-img {
+    position: absolute;
+    opacity: 0.8;
+    animation: rotation 2s infinite linear;
+    /* box-shadow: 5px 5px 5px black; */
+  }
+  @keyframes rotation{
+    1%{
+      transform:rotate3d(0,1,0,1turn);
+    }
+  }
+  .touch-img{
+    animation: rotter 1s infinite linear;
+  }
+  @keyframes rotter {
+    1%{
+      transform:rotate3d(0,1,0,3turn);
+    }
+  }
+  .foot{
+      position:absolute;
+      top:700px;
+      left:630px;
+      color:#F1DDBF;
+      cursor:pointer;
+      font-size:1.2em;
+      transition:font-size .2s;
+      text-shadow: 5px 4px 9px black;
+  }
+  .foot:hover {
+    font-size:1.4em;
+    color: #FF5403;
+  }
+  .btnnr{
+  border-color:#FF5F00;
+  transition:background-color .3s;
+  box-shadow:4px 2px 12px black,4px 2px 12px black;
+  animation: war 1990ms ease-in-out infinite;
+}
+@keyframes war {
+  50%{
+    transform:translateX(15px);
+  }
+  100%{
+    transform:translateX(0px);
+  }
+  </style>
+  <!-- ----------------------------------------------------------- -->
   <body>
+    <img class="rand-img" width="60px" height="60px" src="chess-piece.png" style="top:600px;right:0px;z-index:1;">
+    <img class="rand-img" width="60px" height="60px" src="chess.png" style="top:40px;left:20px;z-index:1;">
+        <!-- ------------------this it it----------------------------------------- -->
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
@@ -25,6 +82,8 @@
         <div id="unity-build-title">BTech. Minor Project - Chess</div>
       </div>
     </div>
+        <!-- ----------------------------------------------------------- -->
+
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Chess.loader.js";
@@ -83,5 +142,15 @@
       };
       document.body.appendChild(script);
     </script>
+        <center>
+          <section>
+            <div class="foot">
+              <h1>FEEDBACK</h1>
+            </div>
+          </section>
+        </center>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
