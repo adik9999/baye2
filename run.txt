@@ -1,0 +1,2 @@
+cd /d "C:\Users\KIIT\Documents\Unity\Game Builds\Chess"
+"C:\Program Files\Unity\Hub\Editor\2020.3.3f1\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten_Win\python\2.7.5.3_64bit\python.exe" -m SimpleHTTPServer
