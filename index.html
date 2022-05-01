@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | BTech. Minor Project - Chess</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -33,7 +35,7 @@ body{
   }
   .foot{
       position:absolute;
-      top:700px;
+      top:740px;
       left:630px;
       color:#F1DDBF;
       cursor:pointer;
@@ -46,18 +48,13 @@ body{
     color: #FF5403;
   }
   .btnnr{
-  border-color:#FF5F00;
+  border-color:#000000;
   transition:background-color .3s;
   box-shadow:4px 2px 12px black,4px 2px 12px black;
-  animation: war 1990ms ease-in-out infinite;
+  /* animation: war 1990ms ease-in-out infinite; */
 }
-@keyframes war {
-  50%{
-    transform:translateX(15px);
-  }
-  100%{
-    transform:translateX(0px);
-  }
+
+
   </style>
   <!-- ----------------------------------------------------------- -->
   <body>
@@ -144,10 +141,12 @@ body{
     </script>
         <center>
           <section>
-            <div class="foot">
-              <h1>FEEDBACK</h1>
-            </div>
-          </section>
+            <div class="container">
+              <button type="button" class="btn btn-secondary btnnr" style="position:absolute;top:725px;left:670px;width:150px;">How To Play</button>
+
+            <button type="button" class="btn btn-outline-warning btn-ban" style="position:absolute;top:795px;width:150px;left:670px;">FEEDBACK</button>
+              </div>
+            </section>
         </center>
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
